@@ -9,9 +9,9 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = "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"
+const API_KEY = "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";
 
-console.log(process.env.API_KEY)
+console.log(process.env.API_KEY);
 
 const systemMessage = {
   role: "system",
@@ -21,7 +21,8 @@ const systemMessage = {
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "أهلا أنا أبو مخطوطة 👋 مساعدك الشخصي لمادة التاريخ, هل لديك اليوم أي أسئلة ؟",
+      message:
+        "أهلا أنا أبو مخطوطة 👋 مساعدك الشخصي لمادة التاريخ, هل لديك اليوم أي أسئلة ؟",
       sentTime: "just now",
       sender: "ChatGPT",
     },
@@ -97,8 +98,16 @@ function App() {
   }
 
   return (
-    <div className="App" style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "right", borderRadius: "20px"}}>
-      <div style={{height: "100vh"}}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "right",
+        borderRadius: "20px",
+      }}
+    >
+      <div style={{height: "99vh"}}>
         <MainContainer>
           <ChatContainer>
             <MessageList

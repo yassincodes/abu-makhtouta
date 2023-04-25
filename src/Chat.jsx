@@ -105,10 +105,12 @@ function App() {
         alignItems: "center",
         textAlign: "right",
         borderRadius: "20px",
+        height: "92vh",
+        marginTop: "4vh",
+        marginBottom: "4vh"
       }}
     >
-      <div>
-        <MainContainer style={{height: "99vh"}}>
+        <MainContainer style={{}}>
           <ChatContainer>
             <MessageList
               scrollBehavior="smooth"
@@ -126,7 +128,6 @@ function App() {
             <MessageInput placeholder="أكتب سؤالك هنا" onSend={handleSend} />
           </ChatContainer>
         </MainContainer>
-      </div>
     </div>
   );
 }

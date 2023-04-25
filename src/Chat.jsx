@@ -105,7 +105,7 @@ function App() {
         alignItems: "center",
         textAlign: "right",
         borderRadius: "20px",
-        height: "92vh",
+        height: "90vh",
         marginTop: "4vh",
         marginBottom: "4vh"
       }}

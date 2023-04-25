@@ -110,7 +110,7 @@ function App() {
         marginBottom: "4vh"
       }}
     >
-        <MainContainer style={{}}>
+        <MainContainer style={{height: "100%"}}>
           <ChatContainer>
             <MessageList
               scrollBehavior="smooth"

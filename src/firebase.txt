@@ -1,0 +1,6 @@
+apiKey: "AIzaSyCnt5jIY3fJxrxpjzAXHeQM1ykKxNBGptk",
+authDomain: "abu-makhtouta.firebaseapp.com",
+projectId: "abu-makhtouta",
+storageBucket: "abu-makhtouta.appspot.com",
+messagingSenderId: "631036684777",
+appId: "1:631036684777:web:27d144e02ce47228154378"

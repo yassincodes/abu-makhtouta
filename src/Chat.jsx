@@ -105,8 +105,11 @@ function App() {
         alignItems: "center",
         textAlign: "right",
         borderRadius: "20px",
-        marginTop: "10vh"
+        marginTop: "10vh",
+        marginRight: "4vh",
+        marginLeft: "4vh"
       }}
+      className="main-container"
     >
       <ChatContainer style={{height: "80vh"}}>
         <MessageList

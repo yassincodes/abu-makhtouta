@@ -105,10 +105,10 @@ function App() {
         alignItems: "center",
         textAlign: "right",
         borderRadius: "20px",
-        height: "100vh"
+        marginTop: "10vh"
       }}
     >
-      <ChatContainer>
+      <ChatContainer style={{height: "80vh"}}>
         <MessageList
           typingIndicator={
             isTyping ? (

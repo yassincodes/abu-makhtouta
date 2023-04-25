@@ -108,7 +108,7 @@ function App() {
       }}
     >
       <div>
-        <MainContainer>
+        <MainContainer style={{height: "99vh"}}>
           <ChatContainer>
             <MessageList
               scrollBehavior="smooth"

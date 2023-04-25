@@ -1,24 +1,14 @@
+import image1 from "./assets/image1.png";
+
 function Body() {
   return (
-    <div dir="rtl">
+    <div dir="rtl" style={{ margin: "2vh 8vw" }}>
       <div>
         <span
           style={{
-            marginRight: "8vw",
             borderBottom: "2px solid black",
             paddingBottom: "3px",
-          }}
-        >
-          مميزات الموقع
-        </span>
-      </div>
-
-      <div>
-        <span
-          style={{
-            marginRight: "8vw",
-            borderBottom: "2px solid black",
-            paddingBottom: "3px",
+            marginBottom: "50px"
           }}
         >
           معلومات حول الموقع
@@ -29,7 +19,7 @@ function Body() {
             flexDirection: "row-reverse",
             justifyContent: "space-around",
             alignItems: "center",
-            margin: "2vh 8vw",
+            marginTop: "20px"
           }}
         >
           <img

@@ -110,7 +110,6 @@ function App() {
     >
       <ChatContainer>
         <MessageList
-          scrollBehavior="smooth"
           typingIndicator={
             isTyping ? (
               <TypingIndicator content="أبو مخطوطة يبحث في المخطوطات التاريخية" />

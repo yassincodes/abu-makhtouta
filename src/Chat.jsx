@@ -98,37 +98,33 @@ function App() {
   }
 
   return (
-    <div
+    <MainContainer
       style={{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         textAlign: "right",
         borderRadius: "20px",
-        height: "90vh",
-        marginTop: "4vh",
-        marginBottom: "4vh"
+        height: "100vh"
       }}
     >
-        <MainContainer style={{height: "100%"}}>
-          <ChatContainer>
-            <MessageList
-              scrollBehavior="smooth"
-              typingIndicator={
-                isTyping ? (
-                  <TypingIndicator content="أبو مخطوطة يبحث في المخطوطات التاريخية" />
-                ) : null
-              }
-            >
-              {messages.map((message, i) => {
-                console.log(message);
-                return <Message key={i} model={message} />;
-              })}
-            </MessageList>
-            <MessageInput placeholder="أكتب سؤالك هنا" onSend={handleSend} />
-          </ChatContainer>
-        </MainContainer>
-    </div>
+      <ChatContainer>
+        <MessageList
+          scrollBehavior="smooth"
+          typingIndicator={
+            isTyping ? (
+              <TypingIndicator content="أبو مخطوطة يبحث في المخطوطات التاريخية" />
+            ) : null
+          }
+        >
+          {messages.map((message, i) => {
+            console.log(message);
+            return <Message key={i} model={message} />;
+          })}
+        </MessageList>
+        <MessageInput placeholder="أكتب سؤالك هنا" onSend={handleSend} />
+      </ChatContainer>
+    </MainContainer>
   );
 }
 

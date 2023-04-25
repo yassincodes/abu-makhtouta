@@ -9,7 +9,7 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = import.meta.env.VITE_Open_AI_Key;
+const VITE_Open_AI_Key = import.meta.env.VITE_Open_AI_Key;
 
 console.log(process.env.API_KEY);
 
@@ -76,7 +76,7 @@ function App() {
     await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
-        Authorization: "Bearer " + API_KEY,
+        Authorization: "Bearer " + VITE_Open_AI_Key,
         "Content-Type": "application/json",
       },
       body: JSON.stringify(apiRequestBody),

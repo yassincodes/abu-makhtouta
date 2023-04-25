@@ -107,7 +107,7 @@ function App() {
         borderRadius: "20px",
       }}
     >
-      <div style={{height: "99vh"}}>
+      <div>
         <MainContainer>
           <ChatContainer>
             <MessageList

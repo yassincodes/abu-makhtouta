@@ -37,14 +37,16 @@ function Header() {
       <div>
         <span>أبو مخطوطة </span>
       </div>
-      
-      <div>
-        {" "}
-        <img
-          style={{ width: "35px" }}
-          src="https://i.redd.it/snoovatar/avatars/c7188bf6-e14f-4047-be02-a8df1d9bba00.png"
-        />
-      </div>
+
+      <Link to="/">
+        <div>
+          {" "}
+          <img
+            style={{ width: "35px" }}
+            src="https://i.redd.it/snoovatar/avatars/c7188bf6-e14f-4047-be02-a8df1d9bba00.png"
+          />
+        </div>
+      </Link>
     </div>
   );
 }

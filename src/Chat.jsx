@@ -9,7 +9,9 @@ import {
   TypingIndicator,
 } from "@chatscope/chat-ui-kit-react";
 
-const API_KEY = "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"
+const API_KEY = "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"
+
+console.log(process.env.API_KEY)
 
 const systemMessage = {
   role: "system",
@@ -19,7 +21,7 @@ const systemMessage = {
 function App() {
   const [messages, setMessages] = useState([
     {
-      message: "أهلا أنا أبو مخطوطة كيف يمكنني مساعدتك اليوم",
+      message: "أهلا أنا أبو مخطوطة 👋 مساعدك الشخصي لمادة التاريخ, هل لديك اليوم أي أسئلة ؟",
       sentTime: "just now",
       sender: "ChatGPT",
     },
@@ -95,8 +97,8 @@ function App() {
   }
 
   return (
-    <div className="App" style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "right"}}>
-      <div style={{height: "95vh"}}>
+    <div className="App" style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "right", borderRadius: "20px"}}>
+      <div style={{height: "100vh"}}>
         <MainContainer>
           <ChatContainer>
             <MessageList
@@ -112,7 +114,7 @@ function App() {
                 return <Message key={i} model={message} />;
               })}
             </MessageList>
-            <MessageInput placeholder="Type message here" onSend={handleSend} />
+            <MessageInput placeholder="أكتب سؤالك هنا" onSend={handleSend} />
           </ChatContainer>
         </MainContainer>
       </div>

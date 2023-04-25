@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Tajawal", sans-serif;
+  background: #e0e0e0
+}
+
+.button {
+  margin-bottom: 14px;
+  background: -webkit-linear-gradient(45deg, #680aca, #ff897e);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  -webkit-animation: animatedgradient 6s ease infinite alternate;
+  animation: animatedgradient 6s ease infinite alternate;
+  background-size: 300% 300%;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  margin: 0px;
+  padding: 9px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  /* Set animation properties */
+  animation-name: bg-position;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bg-position {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.header {
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0);
+}
+
+
+/* I got the classe names from dev tools */
+
+.cs-main-container {
+    border-radius: 20px;
+}
+
+.cs-message-input {
+    display: flex;
+    flex-direction: row-reverse;
+}

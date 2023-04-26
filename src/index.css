@@ -108,3 +108,19 @@ html {
   background: #e0e0e0;
 
 }
+
+.abu-makhtouta-img {
+  width: 160px;
+}
+
+@media only screen and (max-width: 600px) {
+  .abu-makhtouta-img {
+    width: 80px
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .abu-makhtouta-img {
+    width: 200px
+  }
+}

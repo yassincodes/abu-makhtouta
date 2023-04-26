@@ -17,36 +17,37 @@ function Body() {
           style={{
             display: "flex",
             flexDirection: "row-reverse",
-            justifyContent: "space-around",
+            justifyContent: "space-between",
             alignItems: "center",
             marginTop: "20px"
           }}
         >
           <img
-            style={{ width: "150px" }}
+            className="abu-makhtouta-img"
             src="https://i.redd.it/snoovatar/avatars/c7188bf6-e14f-4047-be02-a8df1d9bba00.png"
           />
           <div
             style={{
               background: "white",
               margin: "10px",
-              padding: "10px",
+              padding: "25px",
               borderRadius: "20px",
             }}
+            dir="rtl"
           >
-            <div dir="rtl">
+            <div style={{margin: "20px"}}>
               💡 يهدف الموقع ليكون مساعدا شخصيا للمعلمين والتلاميذ الراغبين في
               تعلم التاريخ
             </div>
-            <div>
+            <div style={{margin: "20px"}}>
               📋 يمكنك إضافة أسئلة جديدة لقسم الأسئلة, وسيتم تسجيلها اليا في
               قاعدة البيانات لتظهر للجميع
             </div>
-            <div>
+            <div style={{margin: "20px"}}>
               👨‍💻 التكنولوجيا الموظفة في بناء الموقع هي نفسها التي تشغل ChatGPT
               ولكن مع بعض التعديلات
             </div>
-            <div>
+            <div style={{margin: "20px"}}>
               📖 قمنا بإعطاء الذكاء الصناعي شخصية مدرس تاريخ يتحدث العربية
             </div>
           </div>

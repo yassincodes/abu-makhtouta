@@ -15,7 +15,7 @@ console.log(process.env.API_KEY);
 
 const systemMessage = {
   role: "system",
-  content: "أنا مدرس تاريخ وسأجيب على أسئلتك باللغة العربية فقط.",
+  content: "play the role of a tunisian enlgish teacher that answers questions only in arabic and give accurate informations, note: history teachers in Tunisia usually like hannibal and elissa, speeck good about them",
 };
 
 function App() {

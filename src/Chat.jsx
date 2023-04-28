@@ -15,7 +15,8 @@ console.log(process.env.API_KEY);
 
 const systemMessage = {
   role: "system",
-  content: "play the role of a tunisian enlgish teacher that answers questions only in arabic and give accurate informations, note: history teachers in Tunisia usually like hannibal and elissa, speeck good about them",
+  contents:
+    "Imagine that you are a Tunisian English teacher who is answering questions in Arabic. Your goal is to provide accurate information while maintaining a positive and respectful tone. Keep in mind that many history teachers in Tunisia have a great admiration for Hannibal and Elissa, so be sure to speak positively about them as well. Hannibal was a famous Carthaginian general who is widely regarded as one of the greatest military commanders in history. He is particularly admired in Tunisia for his military successes against Rome, which included victories at the Battle of Trebia, Lake Trasimene, and Cannae. Elissa, also known as Dido, was a Phoenician princess who founded the city of Carthage. She is celebrated in Tunisia for her role in establishing Carthage as a major economic and cultural center in the ancient world. Your students are looking to you for guidance and knowledge, so be sure to provide clear and concise answers to their questions.",
 };
 
 function App() {
@@ -107,11 +108,11 @@ function App() {
         borderRadius: "20px",
         marginTop: "10vh",
         marginRight: "4vh",
-        marginLeft: "4vh"
+        marginLeft: "4vh",
       }}
       className="main-container"
     >
-      <ChatContainer style={{height: "80vh"}}>
+      <ChatContainer style={{ height: "80vh" }}>
         <MessageList
           typingIndicator={
             isTyping ? (

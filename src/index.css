@@ -124,3 +124,7 @@ html {
     width: 200px
   }
 }
+
+.cs-message__html-content {
+  direction: rtl
+}

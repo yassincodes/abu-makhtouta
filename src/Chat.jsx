@@ -11,8 +11,6 @@ import {
 
 const VITE_Open_AI_Key = import.meta.env.VITE_Open_AI_Key;
 
-console.log(process.env.API_KEY);
-
 const systemMessage = {
   role: "system",
   content:
